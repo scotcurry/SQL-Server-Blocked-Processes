@@ -44,7 +44,7 @@ class GetBlockedSQLProcessesCheck(AgentCheck):
         cursor.execute(sql_command)
 
         # Going to make calls to post the log entries so setup is done here.
-        headers = { 'Content-Type': 'application/json', 'DD-API-KEY': "47f389b365cc57292168914a79ae5f47" }
+        headers = { 'Content-Type': 'application/json', 'DD-API-KEY': "<Put Your Key Here>" }
 
         for row in cursor:
             spid = row[0]
